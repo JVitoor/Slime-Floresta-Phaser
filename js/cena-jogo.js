@@ -46,8 +46,12 @@ export default class CenaJogo extends Phaser.Scene {
 
         let pontos = 0;
         let textoPontos;
-            textoPontos = this.add.text(10, 200, "Pontuação: 0", { fontSize: '32px', fill: '#000' });
-
+            textoPontos = this.add.text(10, 200, "Pontuação: 0", { 
+            fontSize: "32px",
+            fill: "#000",
+            fontFamily: "monospace",
+          });
+        
         function coletaEstrela (jogador, estrela){
             estrela.disableBody(true, true);
 
